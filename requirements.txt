@@ -1,6 +1,5 @@
 appnope==0.1.0
 asn1crypto==0.24.0
-astroid==2.1.0
 backcall==0.1.0
 bcrypt==3.1.6
 beautifulsoup4==4.7.1
