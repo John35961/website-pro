@@ -8,7 +8,7 @@ def home():
 
 @app.route("/fr")
 def home_fr():
-    return render_template('layout_fr.html')
+    return render_template('layout-fr.html')
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5002)
+    app.run(debug=True, port=5000)
