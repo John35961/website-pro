@@ -33,6 +33,12 @@ h1, h3, .icons {
     color:white;
 }
 
+@media screen and (max-width:700px) {
+    .main-section {
+        width: 100%!important;
+    }
+}
+
 ::selection {
     background-color: rgb(241, 196, 15);
 }
