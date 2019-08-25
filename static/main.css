@@ -7,7 +7,7 @@ body {
 }
 
 h1, h2, h4, h5, p, li {
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 h1, h3, .icons {
@@ -15,11 +15,11 @@ h1, h3, .icons {
 }
 
 .icons-white {
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 .links {
-    color:white;
+    color:rgb(255, 255, 255);
     font-weight: bold;
     text-decoration:underline;
 }
@@ -31,12 +31,6 @@ h1, h3, .icons {
 
 .catch-phrase {
     color:white;
-}
-
-@media screen and (max-width:700px) {
-    .main-section {
-        width: 100%!important;
-    }
 }
 
 ::selection {
