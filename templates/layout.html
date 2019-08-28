@@ -1,111 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146380158-1">
-        </script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-146380158-1');
-        </script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>jeanguillet.pro</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-        <link href="{{ url_for('static', filename='css/all.css') }}" rel="stylesheet">
-        <link rel="shortcut icon" href="{{ url_for('static', filename='website-favicon.ico') }}">
-    </head>
-    <body>
-        <div class="main-section container p-5 w-75">
-            <div class="row">
-                <div class="col pb-5">
-                    <h1 class="font-weight-bold">Jean Guillet</h1>
-                    <div style="font-size: 24px;" class="d-inline">
-                        <i class="icons-white fas fa-map-marker-alt fa-xs pb-5"></i>
-                    </div>
-                    <p class="d-inline p-1">Rennes, France</p>
-                    <p><a href="{{ url_for('fr') }}" class="links">FR</a></p>
-                    <h1 class="catch-phrase">Hi ! I'm a french <a href="https://grenoble-em.com" target="_blank" class="links">business school</a> student, interested in new technologies, and product management.</h1>
-                    <p>I'm currently spending my last year of master abroad, in <a href="https://www.mcgill.ca/" target="_blank" class="links">McGill University</a> 🇨🇦, then <a href="http://www.fudan.edu.cn/en/" target="_blank" class="links">Fudan University</a> 🇨🇳.<br />
-                       In my spare time, I take <a href="https://jeanguillet.photo" target="_blank" class='links'>photos</a>, do video editing, and code stuff in Python.
-                       I recently thought I'd put up this simple website to tell a little bit more about me.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col pb-3">
-                    <div style="font-size: 24px;" class="d-inline">
-                        <i class="icons fas fa-briefcase fa-md"></i>
-                    </div>
-                    <h3 class="d-inline p-2">My past experiences ?</h3>
-                    <p class="pt-3">I was a <b>Product intern</b> at <a href="https://www.mytraffic.io/" target="_blank" class="links">MyTraffic</a> from January to July 2019, 
-                       where I took part in the development of a new location intelligence SaaS, and also helped releasing <a href="https://www.monlocalcommercial.fr/" target="_blank" class="links">MonLocalCommercial.fr</a>.
-                       In the meantime, I started using Python for scraping and scripting purposes, and got to play with <a href="https://adresse.data.gouv.fr/api" target="_blank" class="links">geocoding REST APIs</a>.<br />
-                       I also worked as a <b>CRM and Merchandising intern</b> at <a href="https://www.manomano.fr/" target="_blank" class="links">ManoMano</a> 
-                       from June to November 2018. There, I learnt to create targeted emailing campaigns, built HTML emails 
-                       with <a href="https://dartagnan.io/fr" target="_blank" class="links">Dartagnan.io</a>, and monitoring dashboards 
-                       with SQL and <a href="https://metabase.com/" target="_blank" class="links">Metabase</a>.<br />
-                       Before that, I worked for 3 months as a motion design intern for <a href="https://www.targetfirst.com/" target="_blank" class="links">TargetFirst</a>, and a marketing intern at <a href="https://www.galbani.fr/" target="_blank" class="links">Galbani</a>.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col pb-3">          
-                    <div style="font-size: 24px;" class="d-inline">
-                    <i class="icons fas fa-pen fa-md"></i>
-                </div>
-                    <h3 class="d-inline p-2">What do I like to work on ?</h3>
-                    <p class="pt-3">
-                        I enjoy working on web products with marketers, developers and designers, 
-                        discussing UX/UI issues, 
-                        automating stuff with APIs and scripts to work smarter,
-                        projects that enable me to learn new tools, and eventually code by myself.</li>
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col pb-3">          
-                    <div style="font-size: 24px;" class="d-inline">
-                    <i class="icons fas fa-comment fa-md"></i>
-                </div>
-                    <h3 class="d-inline p-2">Want to reach out to me ?</h3>
-                    <p class="pt-3">You can email me at <a href="mailto:jean.guillet@grenoble-em.com" class="links">jean.guillet@grenoble-em.com</a>.<br />
-                        Also I'm on <a href="https://www.linkedin.com/in/jean-guillet-4053a411b/" target="_blank" class="links">LinkedIn</a>, 
-                        <a href="https://www.instagram.com/jeanguillet/" target="_blank" class="links">Instagram</a>, 
-                        <a href="https://www.flickr.com/photos/john35961/" target="_blank" class="links">Flickr</a>,
-                        <a href="https://www.facebook.com/jean.guillet.33" target="_blank" class="links">Facebook</a> and
-                        <a href="https://twitter.com/Johnjohn35961" target="_blank" class="links">Twitter</a>.
-                        </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col pb-5">          
-                    <div style="font-size: 24px;" class="d-inline">
-                    <i class="icons fas fa-code fa-md"></i>
-                </div>
-                    <h3 class="d-inline p-2">How did I code this website ?</h3>
-                    <p class="pt-3">This static website is built using Python, <a href="https://flask.palletsprojects.com/en/1.0.x/" target="_blank" class="links">Flask</a> 
-                    and <a href="https://getbootstrap.com/" target="_blank" class="links">Bootstrap</a>. 
-                    It was made static thanks to <a href="https://pythonhosted.org/Frozen-Flask/" target="_blank" class="links">Frozen-Flask</a>, and I make the deploys to <a href="https://www.netlify.com/" target="_blank" class="links">Netlify servers</a>. 
-                    Coming from a commercial background, this project made it possible 
-                    for me to play with several web technologies, and push my web development skills further.<br />
-                    As a matter of facts, I believe that even non-tech profile should have a good technical understanding of their environment. You feel the same ? Great, <a href="mailto:jean.guillet@grenoble-em.com" class="links">Let's talk about it !</a></p>
-                </div>
-            </div>
-            <div class="row">
-                <p class="pt-3 mx-auto">That's all folks ;)</p>
-            </div>
-            <div class="row">
-                <a class="pt-3 mx-auto to-top" href="#top">
-                    <div style="font-size: 24px;" class="d-inline">
-                        <i class="icons-white fas fa-arrow-up fa-xs"></i>
-                    </div>
-                </a>
-            </div>
+{% extends base.html %}
+{% block content %}
+<div class="row">
+    <div class="col pb-5">
+        <h1 class="font-weight-bold">Jean Guillet</h1>
+        <div style="font-size: 24px;" class="d-inline">
+            <i class="icons-white fas fa-map-marker-alt fa-xs pb-5"></i>
         </div>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</html>
+        <p class="d-inline p-1">Rennes, France</p>
+        <p><a href="{{ url_for('fr') }}" class="links">FR</a></p>
+        <h1 class="catch-phrase">Hi ! I'm a french <a href="https://grenoble-em.com" target="_blank" class="links">business school</a> student, interested in new technologies, and product management.</h1>
+        <p>I'm currently spending my last year of master abroad, in <a href="https://www.mcgill.ca/" target="_blank" class="links">McGill University</a> 🇨🇦, then <a href="http://www.fudan.edu.cn/en/" target="_blank" class="links">Fudan University</a> 🇨🇳.<br />
+            In my spare time, I take <a href="https://jeanguillet.photo" target="_blank" class='links'>photos</a>, do video editing, and code stuff in Python.
+            I recently thought I'd put up this simple website to tell a little bit more about me.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col pb-3">
+        <div style="font-size: 24px;" class="d-inline">
+            <i class="icons fas fa-briefcase fa-md"></i>
+        </div>
+        <h3 class="d-inline p-2">My past experiences ?</h3>
+        <p class="pt-3">I was a <b>Product intern</b> at <a href="https://www.mytraffic.io/" target="_blank" class="links">MyTraffic</a> from January to July 2019, 
+            where I took part in the development of a new location intelligence SaaS, and also helped releasing <a href="https://www.monlocalcommercial.fr/" target="_blank" class="links">MonLocalCommercial.fr</a>.
+            In the meantime, I started using Python for scraping and scripting purposes, and got to play with <a href="https://adresse.data.gouv.fr/api" target="_blank" class="links">geocoding REST APIs</a>.<br />
+            I also worked as a <b>CRM and Merchandising intern</b> at <a href="https://www.manomano.fr/" target="_blank" class="links">ManoMano</a> 
+            from June to November 2018. There, I learnt to create targeted emailing campaigns, built HTML emails 
+            with <a href="https://dartagnan.io/fr" target="_blank" class="links">Dartagnan.io</a>, and monitoring dashboards 
+            with SQL and <a href="https://metabase.com/" target="_blank" class="links">Metabase</a>.<br />
+            Before that, I worked for 3 months as a motion design intern for <a href="https://www.targetfirst.com/" target="_blank" class="links">TargetFirst</a>, and a marketing intern at <a href="https://www.galbani.fr/" target="_blank" class="links">Galbani</a>.
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col pb-3">          
+        <div style="font-size: 24px;" class="d-inline">
+        <i class="icons fas fa-pen fa-md"></i>
+    </div>
+        <h3 class="d-inline p-2">What do I like to work on ?</h3>
+        <p class="pt-3">
+            I enjoy working on web products with marketers, developers and designers, 
+            discussing UX/UI issues, 
+            automating stuff with APIs and scripts to work smarter,
+            projects that enable me to learn new tools, and eventually code by myself.</li>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col pb-3">          
+        <div style="font-size: 24px;" class="d-inline">
+        <i class="icons fas fa-comment fa-md"></i>
+    </div>
+        <h3 class="d-inline p-2">Want to reach out to me ?</h3>
+        <p class="pt-3">You can email me at <a href="mailto:jean.guillet@grenoble-em.com" class="links">jean.guillet@grenoble-em.com</a>.<br />
+            Also I'm on <a href="https://www.linkedin.com/in/jean-guillet-4053a411b/" target="_blank" class="links">LinkedIn</a>, 
+            <a href="https://www.instagram.com/jeanguillet/" target="_blank" class="links">Instagram</a>, 
+            <a href="https://www.flickr.com/photos/john35961/" target="_blank" class="links">Flickr</a>,
+            <a href="https://www.facebook.com/jean.guillet.33" target="_blank" class="links">Facebook</a> and
+            <a href="https://twitter.com/Johnjohn35961" target="_blank" class="links">Twitter</a>.
+            </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col pb-5">          
+        <div style="font-size: 24px;" class="d-inline">
+        <i class="icons fas fa-code fa-md"></i>
+    </div>
+        <h3 class="d-inline p-2">How did I code this website ?</h3>
+        <p class="pt-3">This static website is built using Python, <a href="https://flask.palletsprojects.com/en/1.0.x/" target="_blank" class="links">Flask</a> 
+        and <a href="https://getbootstrap.com/" target="_blank" class="links">Bootstrap</a>. 
+        It was made static thanks to <a href="https://pythonhosted.org/Frozen-Flask/" target="_blank" class="links">Frozen-Flask</a>, and I make the deploys to <a href="https://www.netlify.com/" target="_blank" class="links">Netlify servers</a>. 
+        Coming from a commercial background, this project made it possible 
+        for me to play with several web technologies, and push my web development skills further.<br />
+        As a matter of facts, I believe that even non-tech profile should have a good technical understanding of their environment. You feel the same ? Great, <a href="mailto:jean.guillet@grenoble-em.com" class="links">Let's talk about it !</a></p>
+    </div>
+</div>
+<div class="row">
+    <p class="pt-3 mx-auto">That's all folks ;)</p>
+</div>
+<div class="row">
+    <a class="pt-3 mx-auto to-top" href="#top">
+        <div style="font-size: 24px;" class="d-inline">
+            <i class="icons-white fas fa-arrow-up fa-xs"></i>
+        </div>
+    </a>
+</div>
+{% endblock %}
