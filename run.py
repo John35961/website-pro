@@ -15,4 +15,4 @@ def fr():
     return render_template('layoutfr.html')
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5000)
+    app.run()
