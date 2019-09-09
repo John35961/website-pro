@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
+{% block meta %}
+<meta name="title" content="Jean Guillet | Gestion de projets web, design et code">
+<meta name="description" content="Bonjour ! Je suis Jean Guillet, étudiant à Grenoble École de Management, passionné de nouvelles technologies, et intéressé par la gestion de projets web. J'ai décidé de coder ce petit site pour vous en dire un peu plus sur moi.">
+{% endblock %}
 <div class="row">
     <div class="col pb-5">
         <p><a href="{{ url_for('en') }}" class="links">EN</a></p>
@@ -67,7 +71,7 @@
         et <a href="https://getbootstrap.com/" target="_blank" class="links">Bootstrap</a>. 
         Je l'ai rendu statique avec <a href="https://pythonhosted.org/Frozen-Flask/" target="_blank" class="links">Frozen-Flask</a>, et je fais les déploiements sur un <a href="https://www.netlify.com/" target="_blank" class="links">serveur Netlify</a>. 
         Étant de formation commerciale, ce projet m'a permis de découvrir et expérimenter 
-        plusieurs technos web récentes, et ainsi développer mes <i>skills</i> en développement.<br />
+        plusieurs technos web récentes, et ainsi affûter mes <i>skills</i> en développement.<br />
         Pourquoi coder alors que ça ne fait pas partie de ma formation ? Parce que je pense que même les profils non techniques devraient avoir une bonne connaissance de leur environnement. Vous êtes d'accord ? Cool, <a href="mailto:jean.guillet@grenoble-em.com" class="links">Parlons-en !</a></p>
     </div>
 </div>
