@@ -1,4 +1,4 @@
-### jeanguillet.pro
+### [jeanguillet.pro](https://jeanguillet.pro)
 
 Simple personnal one-page static website, conceived as an enhanced resume, developed and maintained by myself.
 - Python 3.7.3
