@@ -13,7 +13,6 @@ cryptography==2.6.1
 decorator==4.4.0
 defusedxml==0.6.0
 env==0.1.0
-eyeD3==0.8.10
 fire==0.2.0
 flake8==3.7.7
 Flask==1.0.2
