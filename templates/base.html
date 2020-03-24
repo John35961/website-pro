@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
         <link href="{{ url_for('static', filename='css/all.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="{{ url_for('static', filename='website-favicon.ico') }}">
         <link rel="apple-touch-icon" href="{{ url_for('static', filename='website-favicon-appletouch/apple-touch-icon.png') }}" />
         <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='website-favicon-appletouch/apple-touch-icon-57x57.png') }}" />
@@ -30,13 +31,20 @@
     </head>
     <body>
         <div class="main-section container p-5 w-75">
-            <h1 class="font-weight-bold">Jean Guillet</h1>
+            <h1>Jean Guillet</h1>
             <div style="font-size: 24px;" class="d-inline">
-                <i class="icons-white fas fa-map-marker-alt fa-xs pb-5"></i>
+                <i class="icons fas fa-map-marker-alt fa-xs mb-5"></i>
             </div>
             <p class="d-inline p-1">Rennes, France</p>
             {% block content %}
             {% endblock %}
+            <div class="row">
+                <a class="pt-3 mx-auto to-top" href="#top">
+                    <div style="font-size: 24px;" class="d-inline">
+                        <i class="icons fas fa-arrow-up fa-xs"></i>
+                    </div>
+                </a>
+            </div>
         </div>
     </body>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
