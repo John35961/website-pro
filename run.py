@@ -15,4 +15,4 @@ def fr():
     return render_template('FR_layout.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

@@ -11,7 +11,15 @@
         <p>Cette année, je suis ma dernière année de Master à l'<a href="https://www.mcgill.ca/" target="_blank" class="links">Université McGill</a> 🇨🇦, et à l'<a href="http://www.fudan.edu.cn/en/" target="_blank" class="links">Université Fudan</a> 🇨🇳.<br />
             Sinon, je suis fan de <a href="https://jeanguillet.photo" target="_blank" class='links'>photo</a>, je fais du montage vidéo, et je me suis récemment mis à coder en Python.
             Logiquement j'ai donc décidé de coder ce petit site pour vous en dire un peu plus sur moi.</p>
-        <p>Pressé ? <a href="{{ url_for('static', filename='FR_CV_Jean_Guillet.pdf')}}" target="_blank" class="links">Lisez mon CV !</a></p>
+        <div class="pb-3 d-flex">
+            <h5 class="mt-2 pr-3">TL; DR →</h5>
+            <a href="{{ url_for('static', filename='FR_CV_Jean_Guillet.pdf')}}" target="_blank">
+                <button class="mr-2 btn btn-outline-primary">Mon CV</button>
+            </a>
+            <a href="mailto:jean.guillet@grenoble-em.com?subject=Salut Jean!">
+                <button class="btn btn-outline-primary">Contact</button>
+            </a>
+        </div>
     </div>
 </div>
 <div class="row">
@@ -76,12 +84,5 @@
 </div>
 <div class="row">
     <p class="pt-3 mx-auto">Vous savez tout ;)</p>
-</div>
-<div class="row">
-    <a class="pt-3 mx-auto to-top" href="#top">
-        <div style="font-size: 24px;" class="d-inline">
-            <i class="icons-white fas fa-arrow-up fa-xs"></i>
-        </div>
-    </a>
 </div>
 {% endblock %}

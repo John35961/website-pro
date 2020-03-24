@@ -11,7 +11,15 @@
         <p>I'm currently spending my last year of master abroad, in <a href="https://www.mcgill.ca/" target="_blank" class="links">McGill University</a> 🇨🇦, then <a href="http://www.fudan.edu.cn/en/" target="_blank" class="links">Fudan University</a> 🇨🇳.<br />
             In my spare time, I take <a href="https://jeanguillet.photo" target="_blank" class='links'>photos</a>, do video editing, and code stuff in Python.
             I recently thought I'd put up this simple website to tell a little bit more about me.</p>
-            <p>In a hurry? <a href="{{ url_for('static', filename='EN_CV_Jean_Guillet.pdf')}}" target="_blank" class="links">Here's my resume!</a></p>
+        <div class="pb-3 d-flex">
+            <h5 class="mt-2 pr-1">TL; DR →</h5>
+            <a href="{{ url_for('static', filename='EN_CV_Jean_Guillet.pdf')}}" target="_blank">
+                <button class="mr-2 btn btn-outline-primary">My résumé</button>
+            </a>
+            <a href="mailto:jean.guillet@grenoble-em.com?subject=Hello Jean!">
+                <button class="btn btn-outline-primary">Contact</button>
+            </a>
+        </div>
     </div>
 </div>
 <div class="row">
@@ -75,12 +83,5 @@
 </div>
 <div class="row">
     <p class="pt-3 mx-auto">That's all folks ;)</p>
-</div>
-<div class="row">
-    <a class="pt-3 mx-auto to-top" href="#top">
-        <div style="font-size: 24px;" class="d-inline">
-            <i class="icons-white fas fa-arrow-up fa-xs"></i>
-        </div>
-    </a>
 </div>
 {% endblock %}
