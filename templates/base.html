@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146380158-1">
-        </script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-146380158-1', { 'anonymize_ip': true });
-        </script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146380158-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-146380158-1', { 'anonymize_ip': true });
+        </script>
         {% block meta %}
         {% endblock %}
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-        <link href="{{ url_for('static', filename='css/all.css') }}" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="{{ url_for('static', filename='website-favicon.ico') }}">
-        <link rel="apple-touch-icon" href="{{ url_for('static', filename='website-favicon-appletouch/apple-touch-icon.png') }}" />
-        <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='website-favicon-appletouch/apple-icon-57x57.png') }}" />
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='website-favicon-appletouch/apple-icon-72x72.png') }}" />
-        <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='website-favicon-appletouch/apple-icon-76x76.png') }}" />
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='website-favicon-appletouch/apple-icon-114x114.png') }}" />
-        <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='website-favicon-appletouch/apple-icon-120x120.png') }}" />
-        <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='website-favicon-appletouch/apple-icon-144x144.png') }}" />
-        <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='website-favicon-appletouch/apple-icon-152x152.png') }}" />
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='website-favicon-appletouch/apple-icon-180x180.png') }}" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dark-mode.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='icons/website-favicon.ico') }}">
+        <link rel="apple-touch-icon" href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}" />
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='icons/apple-icon-57x57.png') }}" />
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='icons/apple-icon-72x72.png') }}" />
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='icons/apple-icon-76x76.png') }}" />
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='icons/apple-icon-114x114.png') }}" />
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='icons/apple-icon-120x120.png') }}" />
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='icons/apple-icon-144x144.png') }}" />
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='icons/apple-icon-152x152.png') }}" />
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-icon-180x180.png') }}" />
     </head>
     <body>
+        <div class="custom-control custom-checkbox m-4 float-right">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label no-select" for="darkSwitch">🌙</label>
+        </div>
         <div class="main-section container p-5 w-75">
-            <h1>Jean Guillet</h1>
+            <h1 id="mainTitle">Jean Guillet</h1>
             <div style="font-size: 24px;" class="d-inline">
                 <i class="icons fas fa-map-marker-alt fa-xs mb-5"></i>
             </div>
@@ -50,4 +54,5 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/dark-mode-switch.min.js') }}"></script>
 </html>
