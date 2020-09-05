@@ -6,5 +6,3 @@ Simple personnal one-page static website, conceived as an enhanced resume, devel
 - Frozen-Flask to make the app static
 - Bootstrap for styling
 - Deploys made on Netlify
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1a2f9b80-bd7a-4e72-bcbb-61efae4b5453/deploy-status)](https://app.netlify.com/sites/website-pro-prod/deploys)
