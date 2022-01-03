@@ -1,49 +1,49 @@
 [data-theme="dark"] {
-  background-color:#000000;
+  background-color: var(--black);
 }
 
 [data-theme="dark"] p {
-  color: rgb(246,244,230);
+  color: var(--light-yellow);
 }
 
 [data-theme="dark"] h1 {
-  color: rgb(246,244,230);
+  color: var(--light-yellow);
 }
 
 [data-theme="dark"] h3 {
-  color: rgb(246,244,230);
+  color: var(--light-yellow);
 }
 
 [data-theme="dark"] a {
-  color: rgb(246,244,230);
+  color: var(--light-yellow);
 }
 
 [data-theme="dark"] #mainTitle {
-  color: rgb(246,244,230);
+  color: var(--light-yellow);
 }
 
 [data-theme="dark"] .icons {
-  color: rgb(222,113,25);
+  color: var(--main-orange);
 }
 
 [data-theme="dark"] .links:hover {
-  color: rgb(222,113,25);
+  color: var(--main-orange);
   transition:0.4s;
 }
 
 [data-theme="dark"] .btn-outline-primary {
-  color: rgb(222,113,25);
+  color: var(--main-orange);
   background-color: transparent;
   background-image: none;
-  border-color: rgb(222,113,25);
+  border-color: var(--main-orange);
 }
 
 [data-theme="dark"] .btn-outline-primary:hover {
-  color: rgb(255,255,255);
-  background-color: rgb(222,113,25);
-  border-color: rgb(222,113,25);
+  color: var(--white);
+  background-color: var(--main-orange);
+  border-color: var(--main-orange);
 }
 
 [data-theme="dark"] ::selection {
-  background-color: rgb(168, 140, 118);
+  background-color: var(--light-orange-transparent);
 }
