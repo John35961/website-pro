@@ -78,7 +78,7 @@ h1, h3 {
   }
 
 ::selection {
-    background-color: ;
+    background-color: var(--light-blue);
 }
 
 @media screen and (max-width:700px) {
@@ -89,5 +89,3 @@ h1, h3 {
         width: 85px;
         height: 85px;
 }
-
-
