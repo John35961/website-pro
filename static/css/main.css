@@ -33,6 +33,13 @@ h1, h3 {
     pointer-events: none;
 }
 
+.country-flag {
+    width: 20px;
+    height: 14px;
+    margin-top: -3px;
+    pointer-events: none;
+}
+
 .icons {
     color:var(--main-blue);
 }

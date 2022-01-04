@@ -9,7 +9,9 @@ Jean Guillet - Product management, design et code - Rennes (FR)
 {% block content %}
 <div class="row">
     <div class="col pb-5">
-        <p><a href="{{ url_for('en') }}" class="links">EN</a></p>
+        <div class="d-flex align-items-center mb-3">
+            <i class="icons fas fa-exchange-alt pr-2"></i><a href="{{ url_for('en') }}" class="links"><img src="{{ url_for('static', filename='images/uk_flag.png')}}" alt="Switch to english" class="country-flag"></a>
+        </div>
         <h1 class="catch-phrase">Bonjour ! Je suis passionné de nouvelles technologies, et intéressé par la gestion de projets web.</h1>
         <p>Je suis diplômé de <a href="https://grenoble-em.com" target="_blank" class="links">GEM</a>, et j'ai suivi un semestre d'échange à l'<a href="https://www.mcgill.ca/" target="_blank" class="links">Université McGill</a> 🇨🇦.
             Sinon, je suis fan de <a href="https://jeanguillet.photo" target="_blank" class='links'>photo</a>, je fais du montage vidéo, et aime coder des projets en Python.
