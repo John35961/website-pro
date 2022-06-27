@@ -38,7 +38,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 keystoneauth1==4.2.1
 limits==1.5.1
-lxml==4.6.3
+lxml==4.6.5
 MarkupSafe==1.1.1
 mccabe==0.6.1
 msgpack==1.0.0
