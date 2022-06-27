@@ -51,11 +51,13 @@
     </div>
   </div>
 </div>
-{% for idx, project in proj.items() %}
-  {% with project=project  %}
-    {% include "partials/card.html" %}
-  {% endwith %}
-{% endfor %}
+<div class="grid">
+  {% for idx, project in proj.items() %}
+    {% with project=project  %}
+      {% include "partials/card.html" %}
+    {% endwith %}
+  {% endfor %}
+</div>
 <div class="row">
   <div class="col pb-3">
     <div style="font-size: 24px;" class="d-inline">
