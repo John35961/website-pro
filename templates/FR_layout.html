@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block meta %}
-  <meta name="title" property="og:title" content="{{ yml['meta']['title'] }}">
-  <meta name="description" property="og:description" content="{{ yml['meta']['description'] }}">
+<meta name="title" property="og:title" content="{{ yml['meta']['title'] }}">
+<meta name="description" property="og:description" content="{{ yml['meta']['description'] }}">
 {% endblock %}
 {% block title %}
- {{ yml["meta"]["title"] }}
+  {{ yml["meta"]["title"] }}
 {% endblock %}
 {% block content %}
 <div class="row">
@@ -63,10 +63,10 @@
     <i class="icons fas fa-code fa-md"></i>
   </div>
     <h3 class="d-inline p-2">{{ yml["aboutsite"]["title"] }}</h3>
-    <p class="pt-3"> {{ yml["aboutsite"]["content"]|safe }} </p>
+    <p class="pt-3">{{ yml["aboutsite"]["content"]|safe }}</p>
   </div>
 </div>
 <div class="row">
-  <p class="pt-3 mx-auto"> {{ yml["endphrase"] }} </p>
+  <p class="pt-3 mx-auto">{{ yml["endphrase"] }}</p>
 </div>
 {% endblock %}
