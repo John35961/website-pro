@@ -9,7 +9,10 @@ def home():
 
 @app.route("/en/")
 def en():
-    return render_template('EN_layout.html')
+    with open('content/en.yml', 'r') as file:
+        yml = yaml.safe_load(file)
+
+    return render_template('EN_layout.html', yml=yml)
 
 @app.route("/fr/")
 def fr():
