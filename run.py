@@ -1,4 +1,5 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, redirect
+import yaml
 
 app = Flask(__name__)
 
@@ -8,11 +9,17 @@ def home():
 
 @app.route("/en/")
 def en():
-    return render_template('EN_layout.html')
+    with open('content/en.yml', 'r') as file:
+        yml = yaml.safe_load(file)
+
+    return render_template('EN_layout.html', yml=yml)
 
 @app.route("/fr/")
 def fr():
-    return render_template('FR_layout.html')
+    with open('content/fr.yml', 'r') as file:
+        yml = yaml.safe_load(file)
+
+    return render_template('FR_layout.html', yml=yml)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
