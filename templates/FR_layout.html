@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% block meta %}
-<meta name="title" property="og:title" content="{{ yml['meta']['title'] }}">
-<meta name="description" property="og:description" content="{{ yml['meta']['description'] }}">
+<meta name="title"
+      property="og:title"
+      content="{{ yml['meta']['title'] }}">
+<meta name="description"
+      property="og:description"
+      content="{{ yml['meta']['description'] }}">
 {% endblock %}
 {% block title %}
   {{ yml["meta"]["title"] }}
@@ -12,20 +16,37 @@
     <div class="d-flex align-items-center mb-3">
       <i class="icons fas fa-exchange-alt pr-2"></i>
       <a href="{{ url_for('en') }}" class="links">
-        <img src="{{ url_for('static', filename='images/uk_flag.png')}}" alt="Switch to english" class="country-flag">
+        <img src="{{ url_for('static', filename='images/uk_flag.png')}}"
+             alt="Switch to english"
+             class="country-flag">
       </a>
     </div>
     <h1 class="catch-phrase">{{ yml["hero"]["title"] }}</h1>
     <p>{{ yml["hero"]["content"]|safe }}</p>
     <div class="pb-3 d-flex align-content-start flex-wrap">
-      <a class="pt-3" href="{{ url_for('static', filename='images/FR_CV_Jean_Guillet.pdf')}}" target="_blank">
-        <button class="mr-2 btn btn-outline-primary"><i class="fas fa-id-badge pr-2"></i>Mon CV</button>
+      <a class="pt-3"
+         href="{{ url_for('static', filename='images/FR_CV_Jean_Guillet.pdf')}}"
+         target="_blank">
+        <button class="mr-2 btn btn-outline-primary">
+          <i class="fas fa-id-badge pr-2"></i>
+          <span>{{ yml["socials"]["resume"]["title"] }}</span>
+        </button>
       </a>
-      <a class="pt-3" href="https://www.linkedin.com/in/jean-guillet-4053a411b/?locale=fr_FR" target="_blank">
-        <button class="mr-2 btn btn-outline-primary"><i class="fab fa-linkedin pr-2"></i>Mon LinkedIn</button>
+      <a class="pt-3"
+         href="{{ yml['socials']['linkedin']['url'] }}"
+         target="_blank">
+        <button class="mr-2 btn btn-outline-primary">
+          <i class="fab fa-linkedin pr-2"></i>
+          <span>{{ yml["socials"]["linkedin"]["title"] }}</span>
+        </button>
       </a>
-      <a class="pt-3" href="https://github.com/John35961" target="_blank">
-        <button class="mr-2 btn btn-outline-primary"><i class="fab fa-github pr-2"></i>Mon Github</button>
+      <a class="pt-3"
+         href="{{ yml['socials']['github']['url'] }}"
+         target="_blank">
+        <button class="mr-2 btn btn-outline-primary">
+          <i class="fab fa-github pr-2"></i>
+          <span>{{ yml["socials"]["github"]["title"] }}</span>
+        </button>
       </a>
     </div>
   </div>
