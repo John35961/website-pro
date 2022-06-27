@@ -1,6 +1,7 @@
 vanos:
  title: Vanos
  urls:
+  image:
   prod: http://lwg-vanos-prod.herokuapp.com
   github: https://github.com/edouardfeyrau/vanos
  tools:
@@ -16,6 +17,7 @@ vanos:
 mygrowbox:
  title: Mygrowbox
  urls:
+  image: /static/images/projects/mygrowbox.png
   prod: https://www.mygrowbox.fr
   github: https://github.com/besbar/GROWBOX
  tools:
