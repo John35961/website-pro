@@ -1,0 +1,28 @@
+meta:
+  title: Jean Guillet - Product management, design et code - Rennes (FR)
+  description: Bonjour ! Je suis Jean Guillet, étudiant à Grenoble École de Management, passionné de nouvelles technologies, et intéressé par la gestion de projets web. J'ai décidé de coder ce petit site pour vous en dire un peu plus sur moi.
+hero:
+  title: Bonjour ! Je suis passionné de nouvelles technologies, et intéressé par la gestion de projets web.
+  content: Je suis diplômé de <a href="https://grenoble-em.com" target="_blank" class="links">GEM</a>, et j'ai suivi un semestre d'échange à l'<a href="https://www.mcgill.ca/" target="_blank" class="links">Université McGill</a> 🇨🇦. Sinon, je suis fan de <a href="https://jeanguillet.photo" target="_blank" class='links'>photo</a>, je fais du montage vidéo, et aime coder des projets en Python. Logiquement, j'ai donc décidé de publier ce petit site pour vous en dire un peu plus sur moi.
+socials:
+  resume:
+    title: Mon CV
+  linkedin:
+    title: Mon LinkedIn
+    url: https://www.linkedin.com/in/jean-guillet-4053a411b/?locale=fr_FR
+  github:
+    title: Mon GitHub
+    url: https://github.com/John35961
+experiences:
+  title: Mes expériences ?
+  content: J'étais <b>Trade Merchandiser</b> chez <a href="https://www.ebay.fr/" target="_blank" class="links">eBay.fr</a>, de juillet 2020 à décembre 2021, en contact direct avec les vendeurs et marques, chargé du calendrier commercial. <br /> Avant cela, j'étais <b>Assistant Produit</b> chez <a href="https://www.mytraffic.io/" target="_blank" class="links">MyTraffic.io</a> où j'ai pris part au développement d'un nouveau produit SaaS dédié à l'immobilier commercial, j'y ai aussi aidé à mettre sur le marché <a href="https://www.monlocalcommercial.fr/" target="_blank" class="links">MonLocalCommercial.fr</a>. C'est également là que j'ai commencé à faire du <i>scraping</i>, codé des scripts en Python, et découvert le monde des <a href="https://adresse.data.gouv.fr/api" target="_blank" class="links">APIs REST</a>.<br /> J'ai aussi été <b>Assistant CRM & Merchandising</b> chez <a href="https://www.manomano.fr/" target="_blank" class="links">ManoMano</a>de juin à novembre 2018. C'est ici que j'ai conçu mes premières campagnes mail ciblées, construit et testé des emails HTML avec <a href="https://dartagnan.io/fr" target="_blank" class="links">Dartagnan.io</a>, et des tableaux de suivis de performance de nos campagnes avec SQL et <a href="https://metabase.com/" target="_blank" class="links">Metabase</a>.<br /> Plus tôt, j'ai aussi travaillé 3 mois pour <a href="https://www.targetfirst.com/" target="_blank" class="links">TargetFirst</a> en tant que <b>Stagaire en <i>motion design</i></b>, et fait du marketing opérationnel chez <a href="https://www.galbani.fr/" target="_blank" class="links">Galbani</a>.
+aspirations:
+  title: Ce qui me plaît ?
+  content: J'aime travailler sur des produits web, à la croisée des équipes de <i>devs</i>, de <i>designers</i>, et marketing, discuter d'aspects UX/UI, automatiser des projets à l'aide d'APIs et de scripts pour travailler plus intelligemment, et plus largement, découvrir de nouveaux outils, méthodes de travail, et cerise sur le gâteau, coder moi-même.
+contact:
+  title: On en discute ?
+  content: Vous pouvez me joindre à l'adresse <a href="mailto:jean.guillet1@gmail.com?subject=Salut Jean !" class="links">jean.guillet1@gmail.com</a>. Sinon je suis sur <a href="https://www.instagram.com/jeanguillet/" target="_blank" class="links">Instagram</a> et <a href="https://www.facebook.com/jean.guillet.33" target="_blank" class="links">Facebook</a>.
+aboutsite:
+  title: Comment j'ai codé ce site ?
+  content: J'ai construit ce site statique en Python, avec <a href="https://flask.palletsprojects.com/en/1.0.x/" target="_blank" class="links"> Flask</a> et <a href="https://getbootstrap.com/" target="_blank" class="links">Bootstrap</a>. Je l'ai rendu statique avec <a href="https://pythonhosted.org/Frozen-Flask/" target="_blank" class="links">Frozen-Flask</a>, et je fais les déploiements sur un <a href="https://www.netlify.com/" target="_blank" class="links">serveur Netlify</a>. Étant de formation commerciale, ce projet m'a permis de découvrir et expérimenter plusieurs technos web récentes, et ainsi affûter mes <i>skills</i> en développement.<br /> Pourquoi coder alors que ça ne fait pas partie de ma formation ? Parce que je pense que même les profils non techniques devraient avoir une bonne connaissance de leur environnement. Vous êtes d'accord ? Cool, <a href="mailto:jean.guillet1@gmail.com?subject=Salut Jean !" class="links">Parlons-en</a> !
+endphrase: Vous savez tout ;)
