@@ -2,13 +2,13 @@
 {% block meta %}
 <meta name="title"
       property="og:title"
-      content="{{ yml['meta']['title'] }}">
+      content="{{ home['meta']['title'] }}">
 <meta name="description"
       property="og:description"
-      content="{{ yml['meta']['description'] }}">
+      content="{{ home['meta']['description'] }}">
 {% endblock %}
 {% block title %}
-  {{ yml["meta"]["title"] }}
+  {{ home["meta"]["title"] }}
 {% endblock %}
 {% block content %}
 <div class="row">
@@ -21,43 +21,48 @@
              class="country-flag">
       </a>
     </div>
-    <h1 class="catch-phrase">{{ yml["hero"]["title"] }}</h1>
-    <p>{{ yml["hero"]["content"]|safe }}</p>
+    <h1 class="catch-phrase">{{ home["hero"]["title"] }}</h1>
+    <p>{{ home["hero"]["content"]|safe }}</p>
     <div class="pb-3 d-flex align-content-start flex-wrap">
       <a class="pt-3"
          href="{{ url_for('static', filename='images/EN_CV_Jean_Guillet.pdf')}}"
          target="_blank">
         <button class="mr-2 btn btn-outline-primary">
           <i class="fas fa-id-badge pr-2"></i>
-          <span>{{ yml["socials"]["resume"]["title"] }}</span>
+          <span>{{ home["socials"]["resume"]["title"] }}</span>
         </button>
       </a>
       <a class="pt-3"
-         href="{{ yml['socials']['linkedin']['url'] }}"
+         href="{{ home['socials']['linkedin']['url'] }}"
          target="_blank">
         <button class="mr-2 btn btn-outline-primary">
           <i class="fab fa-linkedin pr-2"></i>
-          <span>{{ yml["socials"]["linkedin"]["title"] }}</span>
+          <span>{{ home["socials"]["linkedin"]["title"] }}</span>
         </button>
       </a>
       <a class="pt-3"
-         href="{{ yml['socials']['github']['url'] }}"
+         href="{{ home['socials']['github']['url'] }}"
          target="_blank">
         <button class="mr-2 btn btn-outline-primary">
           <i class="fab fa-github pr-2"></i>
-          <span>{{ yml["socials"]["github"]["title"] }}</span>
+          <span>{{ home["socials"]["github"]["title"] }}</span>
         </button>
       </a>
     </div>
   </div>
 </div>
+{% for idx, project in proj.items() %}
+  {% with project=project  %}
+    {% include "partials/card.html" %}
+  {% endwith %}
+{% endfor %}
 <div class="row">
   <div class="col pb-3">
     <div style="font-size: 24px;" class="d-inline">
       <i class="icons fas fa-briefcase fa-md"></i>
     </div>
-    <h3 class="d-inline p-2">{{ yml["experiences"]["title"] }}</h3>
-    <p class="pt-3">{{ yml["experiences"]["content"]|safe }}</p>
+    <h3 class="d-inline p-2">{{ home["experiences"]["title"] }}</h3>
+    <p class="pt-3">{{ home["experiences"]["content"]|safe }}</p>
   </div>
 </div>
 <div class="row">
@@ -65,8 +70,8 @@
     <div style="font-size: 24px;" class="d-inline">
     <i class="icons fas fa-pen fa-md"></i>
   </div>
-    <h3 class="d-inline p-2">{{ yml["aspirations"]["title"] }}</h3>
-    <p class="pt-3">{{ yml["aspirations"]["content"]|safe }}</p>
+    <h3 class="d-inline p-2">{{ home["aspirations"]["title"] }}</h3>
+    <p class="pt-3">{{ home["aspirations"]["content"]|safe }}</p>
   </div>
 </div>
 <div class="row">
@@ -74,8 +79,8 @@
     <div style="font-size: 24px;" class="d-inline">
     <i class="icons fas fa-comment fa-md"></i>
   </div>
-    <h3 class="d-inline p-2">{{ yml["contact"]["title"] }}</h3>
-    <p class="pt-3">{{ yml["contact"]["content"]|safe }}</p>
+    <h3 class="d-inline p-2">{{ home["contact"]["title"] }}</h3>
+    <p class="pt-3">{{ home["contact"]["content"]|safe }}</p>
   </div>
 </div>
 <div class="row">
@@ -83,11 +88,11 @@
     <div style="font-size: 24px;" class="d-inline">
     <i class="icons fas fa-code fa-md"></i>
   </div>
-    <h3 class="d-inline p-2">{{ yml["aboutsite"]["title"] }}</h3>
-    <p class="pt-3">{{ yml["aboutsite"]["content"]|safe }}</p>
+    <h3 class="d-inline p-2">{{ home["aboutsite"]["title"] }}</h3>
+    <p class="pt-3">{{ home["aboutsite"]["content"]|safe }}</p>
   </div>
 </div>
 <div class="row">
-  <p class="pt-3 mx-auto">{{ yml["endphrase"] }}</p>
+  <p class="pt-3 mx-auto">{{ home["endphrase"] }}</p>
 </div>
 {% endblock %}
