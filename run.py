@@ -22,4 +22,4 @@ def fr():
     return render_template('FR_layout.html', yml=yml)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
