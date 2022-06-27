@@ -1,8 +1,37 @@
 # [jeanguillet.pro](https://jeanguillet.pro)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1a2f9b80-bd7a-4e72-bcbb-61efae4b5453/deploy-status)](https://app.netlify.com/sites/website-pro-prod/deploys)
+
 Simple personnal one-page static website, conceived as an enhanced resume, developed and maintained by myself.
-- Python 3.7.3
-- Flask for overall architecture and routing
-- Frozen-Flask to make the app static
-- Bootstrap for styling
-- Deploys made on Netlify
+
+## Tools
+
+* Python 3.7
+
+* Flask & Frozen-Flask
+
+* Bootstrap 4
+
+* Netlify
+
+## Dependencies
+
+* [Flask](https://flask.palletsprojects.com/en/2.1.x/)
+
+* [Frozen-Flask](https://pythonhosted.org/Frozen-Flask/)
+
+* [PyYAML](https://pypi.org/project/PyYAML/)
+
+## Run locally
+
+Clone the repo: `git clone git@github.com:John35961/website-pro.git`
+
+Install pipenv if not present: `pip3 install pipenv`
+
+Install dependencies from Pipfile with: `pipenv install`
+
+Activate the Pipenv shell: `pipenv shell`
+
+From the sell, run the server with: `python3 run.py`
+
+Then visit: `http://127.0.0.1:5000`
