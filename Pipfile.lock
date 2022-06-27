@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c57aecf3627851ea0b59246222c1f7a822775309fe3ad505acbc43ee6e98b661"
+            "sha256": "983e52d09c6cf77bfb3bd2345b308737cc81130d6300231fbdd016b0507dfef4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,6 +31,14 @@
             ],
             "index": "pypi",
             "version": "==2.1.2"
+        },
+        "frozen-flask": {
+            "hashes": [
+                "sha256:4113638baebb348e16b10b12cbd88bddc7309f24d94332a18ae6a56c8ac02d3d",
+                "sha256:6d892fd929f6676c3270b7d91d86a1fc03c9850dc21e3b02b3946381c48ab307"
+            ],
+            "index": "pypi",
+            "version": "==0.18"
         },
         "importlib-metadata": {
             "hashes": [
