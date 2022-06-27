@@ -1,4 +1,14 @@
 .main-card {
-  padding: 10px;
-  background-color: red;
+  border-radius: 5px;
+  background-color: $icy-white-variant;
+  &-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  &-content {
+    padding: 10px;
+  }
 }
