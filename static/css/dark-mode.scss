@@ -1,55 +1,51 @@
+@import 'config/colors';
+
 [data-theme="dark"] {
   background-color: black;
 }
 
 [data-theme="dark"] p {
-  color: #f6f4e6;
+  color: $light-yellow;
 }
 
 [data-theme="dark"] h1 {
-  color: #f6f4e6;
+  color: $light-yellow;
 }
 
 [data-theme="dark"] h3 {
-  color: #f6f4e6;
+  color: $light-yellow;
 }
 
 [data-theme="dark"] a {
-  color: #f6f4e6;
+  color: $light-yellow;
 }
 
 [data-theme="dark"] #mainTitle {
-  color: #f6f4e6;
+  color: $light-yellow;
 }
 
 [data-theme="dark"] .icons {
-  color: #de7119;
+  color: $main-orange;
 }
 
 [data-theme="dark"] .links:hover {
-  color: #de7119;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  color: $main-orange;
+  transition:0.4s;
 }
 
 [data-theme="dark"] .btn-outline-primary {
-  color: #de7119;
+  color: $main-orange;
   background-color: transparent;
   background-image: none;
-  border-color: #de7119;
+  border-color: $main-orange;
 }
 
 [data-theme="dark"] .btn-outline-primary:hover {
   color: white;
-  background-color: #de7119;
-  border-color: #de7119;
-}
-
-[data-theme="dark"] ::-moz-selection {
-  background-color: rgba(168, 140, 118, 0.5);
+  background-color: $main-orange;
+  border-color: $main-orange;
 }
 
 [data-theme="dark"] ::selection {
-  background-color: rgba(168, 140, 118, 0.5);
+  background-color: $light-orange-transparent;
 }
-/*# sourceMappingURL=dark-mode.css.map */

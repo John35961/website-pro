@@ -1,12 +1,6 @@
-:root {
-  --white: rgb(255, 255, 255);
-  --icy-white: rgb(238, 250, 250);
-  --black: rgb(0, 0, 0);
-  --main-blue: rgb(0, 47, 239);
-  --light-blue: rgb(225, 232, 255);
-  --main-orange: rgb(222,113,25);
-  --light-orange-transparent: rgba(168, 140, 118, 0.5);
-  --light-yellow: rgb(246,244,230);
+.main-card {
+  padding: 10px;
+  background-color: red;
 }
 
 html {
@@ -14,16 +8,16 @@ html {
 }
 
 body {
-  background-color: var(--icy-white);
+  background-color: #eefafa;
 }
 
 p, li {
-  color: var(--black);
+  color: black;
 }
 
 h1, h3 {
   font-family: 'Poppins', sans-serif;
-  color: var(--main-blue);
+  color: #002fef;
 }
 
 #profileImage {
@@ -41,39 +35,41 @@ h1, h3 {
 }
 
 .icons {
-  color: var(--main-blue);
+  color: #002fef;
 }
 
 .icons-white {
-  color: var(--white);
+  color: white;
 }
 
 .links {
-  color: var(--black);
+  color: black;
   text-decoration: underline;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
 }
 
 .links:hover {
-  color: var(--main-blue);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  color: #002fef;
+  -webkit-transition: color 0.1s;
+  transition: color 0.1s;
 }
 
 .catch-phrase {
-  color: var(--black);
+  color: black;
 }
 
 .btn-outline-primary {
-  color: var(--main-blue);
+  color: #002fef;
   background-color: transparent;
   background-image: none;
-  border-color: var(--main-blue);
+  border-color: #002fef;
 }
 
 .btn-outline-primary:hover {
-  color: var(--white);
-  background-color: var(--main-blue);
-  border-color: var(--main-blue);
+  color: white;
+  background-color: #002fef;
+  border-color: #002fef;
 }
 
 .no-select {
@@ -85,11 +81,11 @@ h1, h3 {
 }
 
 ::-moz-selection {
-  background-color: var(--light-blue);
+  background-color: #e1e8ff;
 }
 
 ::selection {
-  background-color: var(--light-blue);
+  background-color: #e1e8ff;
 }
 
 @media screen and (max-width: 700px) {
