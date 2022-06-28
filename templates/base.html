@@ -1,64 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="image" property="og:image" content="{{ url_for('static', filename='images/social_image.jpg') }}">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146380158-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-146380158-1', { 'anonymize_ip': true });
-        </script>
-        {% block meta %}
-        {% endblock %}
-        <title>{% block title %}{% endblock %}</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dark-mode.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}">
-        <link rel="shortcut icon" href="{{ url_for('static', filename='icons/website-favicon.ico') }}">
-        <link rel="apple-touch-icon" href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}" />
-        <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='icons/apple-icon-57x57.png') }}" />
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='icons/apple-icon-72x72.png') }}" />
-        <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='icons/apple-icon-76x76.png') }}" />
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='icons/apple-icon-114x114.png') }}" />
-        <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='icons/apple-icon-120x120.png') }}" />
-        <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='icons/apple-icon-144x144.png') }}" />
-        <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='icons/apple-icon-152x152.png') }}" />
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-icon-180x180.png') }}" />
-    </head>
-    <body>
-        <div class="custom-control custom-checkbox m-4 float-right">
-            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-            <label class="custom-control-label no-select" for="darkSwitch">🌙</label>
-        </div>
-        <div class="main-section container p-5 w-75">
-            <div class="d-flex align-items-center mb-5">
-                <img id="profileImage" class="no-select" src="{{ url_for('static', filename='images/profile_image_150x150.jpg') }}" alt="Profile image">
-                <div class="pl-3">
-                    <h1 id="mainTitle" class="mb-0">Jean Guillet</h1>
-                    <div style="font-size: 24px;" class="d-inline">
-                        <i class="icons fas fa-map-marker-alt fa-xs"></i>
-                    </div>
-                    <p class="d-inline">Paris, France</p>
-                </div>
-            </div>
-            {% block content %}
-            {% endblock %}
-            <div class="row">
-                <a class="pt-3 mx-auto to-top" href="#top">
-                    <div style="font-size: 24px;" class="d-inline">
-                        <i class="icons fas fa-arrow-up fa-xs"></i>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="{{ url_for('static', filename='js/dark-mode-switch.min.js') }}"></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="image" property="og:image" content="{{ url_for('static', filename='images/social_image.jpg') }}">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146380158-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-146380158-1', { 'anonymize_ip': true });
+    </script>
+    {% block meta %}
+    {% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dark-mode.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='icons/website-favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='icons/apple-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='icons/apple-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='icons/apple-icon-76x76.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='icons/apple-icon-114x114.png') }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='icons/apple-icon-120x120.png') }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='icons/apple-icon-144x144.png') }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='icons/apple-icon-152x152.png') }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-icon-180x180.png') }}" />
+  </head>
+  <body>
+    <div class="custom-control custom-checkbox m-4 float-right">
+      <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+      <label class="custom-control-label no-select" for="darkSwitch">🌙</label>
+    </div>
+    <div class="main-section container p-5 w-75">
+      <div class="d-flex align-items-center mb-5">
+        <img id="profileImage" class="no-select" src="{{ url_for('static', filename='images/profile_image_150x150.jpg') }}" alt="Profile image">
+          <div class="pl-3">
+            <h1 id="mainTitle" class="mb-0">Jean Guillet</h1>
+              <div style="font-size: 24px;" class="d-inline">
+                <i class="icons fas fa-map-marker-alt fa-xs"></i>
+              </div>
+              <p class="d-inline">Paris, France</p>
+          </div>
+      </div>
+      {% block content %}
+      {% endblock %}
+      <div class="row">
+        <a class="pt-3 mx-auto to-top" href="#top">
+          <div style="font-size: 24px;" class="d-inline">
+            <i class="icons fas fa-arrow-up fa-xs"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='js/dark-mode-switch.min.js') }}"></script>
 </html>
