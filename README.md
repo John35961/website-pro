@@ -32,6 +32,6 @@ Install dependencies from Pipfile with: `pipenv install`
 
 Activate the Pipenv shell: `pipenv shell`
 
-From the sell, run the server with: `python3 run.py`
+From the shell, run the server with: `python3 run.py`
 
 Then visit: `http://127.0.0.1:5000`
