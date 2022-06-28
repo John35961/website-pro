@@ -16,7 +16,6 @@ p, li {
 
 h1, h3 {
     font-family: 'Poppins', sans-serif;
-    color: $main-blue;
 }
 
 #profileImage {
@@ -33,38 +32,8 @@ h1, h3 {
     pointer-events: none;
 }
 
-.icons {
-    color: $main-blue;
-}
-
 .icons-white {
     color: white;
-}
-
-.links {
-    color: black;
-    text-decoration: underline;
-    transition: color 0.1s;
-    &:hover {
-      color: $main-blue;
-      transition: color 0.1s;
-    }
-}
-
-.catch-phrase {
-    color: black;
-}
-
-.btn-outline-primary {
-    color: $main-blue;
-    background-color: transparent;
-    background-image: none;
-    border-color: $main-blue;
-    &:hover {
-      color: white;
-      background-color: $main-blue;
-      border-color: $main-blue;
-    }
 }
 
 .no-select {

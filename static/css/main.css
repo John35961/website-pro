@@ -51,7 +51,6 @@ p, li {
 
 h1, h3 {
   font-family: 'Poppins', sans-serif;
-  color: #002fef;
 }
 
 #profileImage {
@@ -68,42 +67,8 @@ h1, h3 {
   pointer-events: none;
 }
 
-.icons {
-  color: #002fef;
-}
-
 .icons-white {
   color: white;
-}
-
-.links {
-  color: black;
-  text-decoration: underline;
-  -webkit-transition: color 0.1s;
-  transition: color 0.1s;
-}
-
-.links:hover {
-  color: #002fef;
-  -webkit-transition: color 0.1s;
-  transition: color 0.1s;
-}
-
-.catch-phrase {
-  color: black;
-}
-
-.btn-outline-primary {
-  color: #002fef;
-  background-color: transparent;
-  background-image: none;
-  border-color: #002fef;
-}
-
-.btn-outline-primary:hover {
-  color: white;
-  background-color: #002fef;
-  border-color: #002fef;
 }
 
 .no-select {
