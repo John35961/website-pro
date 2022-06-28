@@ -1,7 +1,11 @@
-<div class="card">
-  <h3>{{ project["title"] }}</h3>
-  <span>{{ project["description"] }}</span>
-  {% for tool in project["tools"] %}
-    <span class="badge bg-primary text-light">{{ tool }}</span>
-  {% endfor %}
+<div class="main-card">
+  <div class="main-card-image"
+       style="background-image:url({{ project['urls']['image'] }})"></div>
+  <div class="main-card-content">
+    <h3>{{ project["title"] }}</h3>
+    <span>{{ project["description"] }}</span>
+    {% for tool in project["tools"] %}
+      <span class="badge bg-primary text-light">{{ tool }}</span>
+    {% endfor %}
+  </div>
 </div>

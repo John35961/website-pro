@@ -1,27 +1,26 @@
 vanos:
  title: Vanos
  urls:
+  image:
   prod: http://lwg-vanos-prod.herokuapp.com
   github: https://github.com/edouardfeyrau/vanos
  tools:
   - Ruby on Rails
+  - PostgreSQL
   - Bootstrap 5
-  - PostgreSQL / ActiveRecord
-  - Stimulus.js / TurboJS / AJAX
+  - Stimulus.js
   - Sidekiq
-  - MQTT
   - ngrok
   - Heroku
-  - Git / GitHub
 mygrowbox:
  title: Mygrowbox
  urls:
+  image: /static/images/projects/mygrowbox.png
   prod: https://www.mygrowbox.fr
   github: https://github.com/besbar/GROWBOX
  tools:
  - Ruby on Rails
+ - PostgreSQL
  - Bootstrap 5
- - PostgreSQL / ActiveRecord
- - Stimulus.js / TurboJS / AJAX
+ - Stimulus.js
  - Heroku
- - Git / GitHub
