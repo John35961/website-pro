@@ -28,25 +28,27 @@
     <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='icons/apple-icon-152x152.png') }}" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-icon-180x180.png') }}" />
   </head>
-  <body>
-    <div>
-      <img src="{{ url_for('static', filename='images/profile_image_150x150.jpg') }}" alt="Profile image">
-        <div>
-          <h1>Jean Guillet</h1>
-            <div>
-              <i class="icons fas fa-map-marker-alt fa-xs"></i>
-            </div>
-            <p>Paris, France</p>
-        </div>
-    </div>
-    {% block content %}
-    {% endblock %}
-    <div class="row">
-      <a class="pt-3 mx-auto to-top" href="#top">
-        <div style="font-size: 24px;" class="d-inline">
-          <i class="icons fas fa-arrow-up fa-xs"></i>
-        </div>
-      </a>
+  <body class="bg-neutral-50">
+    <div class="w-auto lg:w-3/4 mx-5 my-10 lg:mx-auto">
+      <div class="flex items-center my-10">
+        <img class="mr-5 rounded-full" src="{{ url_for('static', filename='images/profile_image_150x150.jpg') }}" alt="Profile image">
+          <div>
+            <h1 class="text-3xl text-indigo-600">Jean Guillet</h1>
+              <div class="flex items-center">
+                <i class="mr-2 fas fa-map-marker-alt fa-xs"></i>
+                <p>Paris, France</p>
+              </div>
+          </div>
+      </div>
+      {% block content %}
+      {% endblock %}
+      <div class="row">
+        <a class="pt-3 mx-auto to-top" href="#top">
+          <div style="font-size: 24px;" class="d-inline">
+            <i class="icons fas fa-arrow-up fa-xs"></i>
+          </div>
+        </a>
+      </div>
     </div>
   </body>
 </html>
