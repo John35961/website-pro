@@ -1,8 +1,8 @@
+**01/09/22**: this site is no longer my main site, nor is it updated. It's simply kept online for the sake of demonstration. See [jeanguillet.com](https://www.jeanguillet.com) for my new portfolio.
+
 # [jeanguillet.pro](https://website-pro-prod.netlify.app)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1a2f9b80-bd7a-4e72-bcbb-61efae4b5453/deploy-status)](https://app.netlify.com/sites/website-pro-prod/deploys)
-
-**Update 01/09/22**: this site is no longer my main site, nor is it updated. It's simply kept online for the sake of demonstration. See [jeanguillet.com](https://www.jeanguillet.com) for my new portfolio.
 
 Simple personnal one-page static website, conceived as an enhanced resume, developed and maintained by myself.
 
