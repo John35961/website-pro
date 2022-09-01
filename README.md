@@ -1,4 +1,6 @@
-**01/09/22**: this site is no longer my main site, nor is it updated. It's simply kept online for the sake of demonstration. See [jeanguillet.com](https://www.jeanguillet.com) for my new portfolio.
+⚠️ **01/09/22**: this site is no longer my main site, nor is it updated. It's simply kept online for the sake of demonstration. See [jeanguillet.com](https://www.jeanguillet.com) for my new portfolio.
+
+---
 
 # [jeanguillet.pro](https://website-pro-prod.netlify.app)
 
